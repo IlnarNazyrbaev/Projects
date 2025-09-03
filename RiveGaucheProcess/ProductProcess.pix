@@ -2469,18 +2469,48 @@
       </AbstractStep>
       <AbstractStep z:Id="i276" i:type="ExecutedStep">
         <Childs />
-        <Id>45581d0b-e83e-4ea0-b3b5-d56235c6bc48</Id>
+        <Id>884654d5-58df-436d-b8db-e39ae940656b</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
           <PropertyValue z:Id="i277">
-            <PropertyName>DataBaseConnectionString</PropertyName>
+            <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>@$"Driver={"PostgreSQL UNICODE"}; Server={"localhost"}; Port={"5432"}; Database={"testdb"}; Uid={"postgres"}; Pwd={"11111111"};"</_expression>
+            <_expression>new System.Net.NetworkCredential(string.Empty, dict_secureData["DbCred_passwd"]).Password</_expression>
             <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
           <PropertyValue z:Id="i278">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>str_passwordDB</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Преобразовываем SecureString к String</Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i279" i:type="ExecutedStep">
+        <Childs />
+        <Id>45581d0b-e83e-4ea0-b3b5-d56235c6bc48</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i280">
+            <PropertyName>DataBaseConnectionString</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@$"Driver={"PostgreSQL UNICODE"}; Server={dict_config["DbCred_login"].ToString()}; Port={"5432"}; Database={"testdb"}; Uid={"postgres"}; Pwd={str_passwordDB};"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i281">
             <PropertyName>DataBaseProvider</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"System.Data.Odbc"</_expression>
@@ -2488,7 +2518,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i279">
+          <PropertyValue z:Id="i282">
             <PropertyName>OutSqlConnection</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>db_connection</_expression>
@@ -2505,12 +2535,12 @@
         <Text>Подключаемся к локальной БД</Text>
         <_activityFullName>Activities.DataBaseSQL.CreateConnection</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i280" i:type="ExecutedStep">
+      <AbstractStep z:Id="i283" i:type="ExecutedStep">
         <Childs />
         <Id>4288145f-d804-4be5-a862-23edb24dc37f</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i281">
+          <PropertyValue z:Id="i284">
             <PropertyName>Connection</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>db_connection</_expression>
@@ -2518,7 +2548,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i282">
+          <PropertyValue z:Id="i285">
             <PropertyName>DataBaseSchemaName</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"public"</_expression>
@@ -2526,7 +2556,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i283">
+          <PropertyValue z:Id="i286">
             <PropertyName>DataBaseTableName</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"result"</_expression>
@@ -2534,7 +2564,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i284">
+          <PropertyValue z:Id="i287">
             <PropertyName>DataTable</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>dt_resultProduct</_expression>
@@ -2542,7 +2572,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i285">
+          <PropertyValue z:Id="i288">
             <PropertyName>OneChunkMaxRowsCount</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>150</_expression>
@@ -2550,7 +2580,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i286">
+          <PropertyValue z:Id="i289">
             <PropertyName>AffectedRows</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression></_expression>
@@ -2567,12 +2597,12 @@
         <Text></Text>
         <_activityFullName>Activities.DataBaseSQL.SaveTableToDatabase</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i287" i:type="ExecutedStep">
+      <AbstractStep z:Id="i290" i:type="ExecutedStep">
         <Childs />
         <Id>6c555df6-e023-4064-842d-0894008cc768</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i288">
+          <PropertyValue z:Id="i291">
             <PropertyName>InSqlConnection</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>db_connection</_expression>
@@ -2589,12 +2619,12 @@
         <Text></Text>
         <_activityFullName>Activities.DataBaseSQL.RemoveConnection</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i289" i:type="ExecutedStep">
+      <AbstractStep z:Id="i292" i:type="ExecutedStep">
         <Childs />
         <Id>1505d041-fa70-4973-aab7-0a3717d3fd8e</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i290">
+          <PropertyValue z:Id="i293">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>browserWork</_expression>
@@ -2626,26 +2656,33 @@
   <Name>ProductProcess.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i291">
+    <Parameter z:Id="i294">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>Конфиг</Description>
       <Name>dict_config</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i292">
+    <Parameter z:Id="i295">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>Подключение к БД</Description>
       <Name>in_db_connection</Name>
       <RunnerType>None</RunnerType>
       <TypeString>Activities.DataBaseSQL.Core.DataBaseShareMethodConnection</TypeString>
     </Parameter>
-    <Parameter z:Id="i293">
+    <Parameter z:Id="i296">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>Таблица с городами брендов</Description>
       <Name>in_dt_cityBrand</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Data.DataTable</TypeString>
+    </Parameter>
+    <Parameter z:Id="i297">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>dict_secureData</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Security.SecureString, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
   </Params>
   <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
