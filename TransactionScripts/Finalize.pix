@@ -51,7 +51,7 @@
                   <PropertyValue z:Id="i9">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
-                    <_expression>$"Робот завершил работу. Скриншот результата во вложении"</_expression>
+                    <_expression>$"Робот завершил работу."</_expression>
                     <_screenShotBase64 i:nil="true" />
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -93,29 +93,29 @@
                     <_screenShotBase64 i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem">
                       <d11p1:ArgumentItem z:Id="i14">
-                        <d11p1:ArgumentName>dict_config</d11p1:ArgumentName>
-                        <d11p1:Expression>dict_config</d11p1:Expression>
-                        <d11p1:Type>Dictionary&lt;System.String, System.Object&gt;</d11p1:Type>
-                      </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i15">
                         <d11p1:ArgumentName>int_notifyType</d11p1:ArgumentName>
                         <d11p1:Expression>1</d11p1:Expression>
                         <d11p1:Type>System.Int32</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i16">
+                      <d11p1:ArgumentItem z:Id="i15">
                         <d11p1:ArgumentName>list_attaches</d11p1:ArgumentName>
                         <d11p1:Expression>new List&lt;string&gt;{}</d11p1:Expression>
                         <d11p1:Type>List&lt;System.String&gt;</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i17">
+                      <d11p1:ArgumentItem z:Id="i16">
                         <d11p1:ArgumentName>sec_mailPassword</d11p1:ArgumentName>
                         <d11p1:Expression>dict_secureData["MailCred_passwd"]</d11p1:Expression>
                         <d11p1:Type>System.Security.SecureString</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i18">
+                      <d11p1:ArgumentItem z:Id="i17">
                         <d11p1:ArgumentName>bool_takeScreenshot</d11p1:ArgumentName>
                         <d11p1:Expression>true</d11p1:Expression>
                         <d11p1:Type>System.Boolean</d11p1:Type>
+                      </d11p1:ArgumentItem>
+                      <d11p1:ArgumentItem z:Id="i18">
+                        <d11p1:ArgumentName>in_dict_config</d11p1:ArgumentName>
+                        <d11p1:Expression>dict_config</d11p1:Expression>
+                        <d11p1:Type>Dictionary&lt;System.String, System.Object&gt;</d11p1:Type>
                       </d11p1:ArgumentItem>
                     </_value>
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -197,29 +197,29 @@
                             <_screenShotBase64 i:nil="true" />
                             <_value xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d15p1:ArrayOfArgumentItem">
                               <d15p1:ArgumentItem z:Id="i28">
-                                <d15p1:ArgumentName>dict_config</d15p1:ArgumentName>
-                                <d15p1:Expression>dict_config</d15p1:Expression>
-                                <d15p1:Type>Dictionary&lt;System.String, System.Object&gt;</d15p1:Type>
-                              </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i29">
                                 <d15p1:ArgumentName>int_notifyType</d15p1:ArgumentName>
                                 <d15p1:Expression>2</d15p1:Expression>
                                 <d15p1:Type>System.Int32</d15p1:Type>
                               </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i30">
+                              <d15p1:ArgumentItem z:Id="i29">
                                 <d15p1:ArgumentName>list_attaches</d15p1:ArgumentName>
                                 <d15p1:Expression>new List&lt;string&gt;{}</d15p1:Expression>
                                 <d15p1:Type>List&lt;System.String&gt;</d15p1:Type>
                               </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i31">
+                              <d15p1:ArgumentItem z:Id="i30">
                                 <d15p1:ArgumentName>sec_mailPassword</d15p1:ArgumentName>
                                 <d15p1:Expression>dict_secureData["MailCred_passwd"]</d15p1:Expression>
                                 <d15p1:Type>System.Security.SecureString</d15p1:Type>
                               </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i32">
+                              <d15p1:ArgumentItem z:Id="i31">
                                 <d15p1:ArgumentName>bool_takeScreenshot</d15p1:ArgumentName>
                                 <d15p1:Expression>false</d15p1:Expression>
                                 <d15p1:Type>System.Boolean</d15p1:Type>
+                              </d15p1:ArgumentItem>
+                              <d15p1:ArgumentItem z:Id="i32">
+                                <d15p1:ArgumentName>in_dict_config</d15p1:ArgumentName>
+                                <d15p1:Expression>dict_config</d15p1:Expression>
+                                <d15p1:Type>Dictionary&lt;System.String, System.Object&gt;</d15p1:Type>
                               </d15p1:ArgumentItem>
                             </_value>
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -327,29 +327,29 @@
                             <_screenShotBase64 i:nil="true" />
                             <_value xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d15p1:ArrayOfArgumentItem">
                               <d15p1:ArgumentItem z:Id="i43">
-                                <d15p1:ArgumentName>dict_config</d15p1:ArgumentName>
-                                <d15p1:Expression>dict_config</d15p1:Expression>
-                                <d15p1:Type>Dictionary&lt;System.String, System.Object&gt;</d15p1:Type>
-                              </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i44">
                                 <d15p1:ArgumentName>int_notifyType</d15p1:ArgumentName>
                                 <d15p1:Expression>3</d15p1:Expression>
                                 <d15p1:Type>System.Int32</d15p1:Type>
                               </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i45">
+                              <d15p1:ArgumentItem z:Id="i44">
                                 <d15p1:ArgumentName>list_attaches</d15p1:ArgumentName>
                                 <d15p1:Expression>new List&lt;string&gt;{}</d15p1:Expression>
                                 <d15p1:Type>List&lt;System.String&gt;</d15p1:Type>
                               </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i46">
+                              <d15p1:ArgumentItem z:Id="i45">
                                 <d15p1:ArgumentName>sec_mailPassword</d15p1:ArgumentName>
                                 <d15p1:Expression>dict_secureData["MailCred_passwd"]</d15p1:Expression>
                                 <d15p1:Type>System.Security.SecureString</d15p1:Type>
                               </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i47">
+                              <d15p1:ArgumentItem z:Id="i46">
                                 <d15p1:ArgumentName>bool_takeScreenshot</d15p1:ArgumentName>
                                 <d15p1:Expression>false</d15p1:Expression>
                                 <d15p1:Type>System.Boolean</d15p1:Type>
+                              </d15p1:ArgumentItem>
+                              <d15p1:ArgumentItem z:Id="i47">
+                                <d15p1:ArgumentName>in_dict_config</d15p1:ArgumentName>
+                                <d15p1:Expression>dict_config</d15p1:Expression>
+                                <d15p1:Type>Dictionary&lt;System.String, System.Object&gt;</d15p1:Type>
                               </d15p1:ArgumentItem>
                             </_value>
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
