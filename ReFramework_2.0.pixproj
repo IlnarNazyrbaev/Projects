@@ -53,19 +53,19 @@
     </ProjectFileItem>
     <ProjectFileItem z:Id="i14">
       <IsMain>false</IsMain>
-      <Path>RiveGaucheProcess\RG_CycleColor.pix</Path>
+      <Path>RiveGaucheProcess\RG_ProductProcess.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i15">
       <IsMain>false</IsMain>
-      <Path>RiveGaucheProcess\RG_ProductProcess.pix</Path>
+      <Path>RiveGaucheProcess\RG_DataProcess.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i16">
       <IsMain>false</IsMain>
-      <Path>RiveGaucheProcess\RG_DataProcess.pix</Path>
+      <Path>RiveGaucheProcess\RG_CheckAvailability.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i17">
       <IsMain>false</IsMain>
-      <Path>RiveGaucheProcess\RG_CheckAvailability.pix</Path>
+      <Path>RiveGaucheProcess\RG_ProductVariations.pix</Path>
     </ProjectFileItem>
   </Files>
   <MasterUploadId i:nil="true" />

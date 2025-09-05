@@ -903,7 +903,7 @@
               <PropertyValue z:Id="i100">
                 <PropertyName>FilePath</PropertyName>
                 <_dataType>Expression</_dataType>
-                <_expression>@"RiveGaucheProcess\RG_CycleColor.pix"</_expression>
+                <_expression>@"RiveGaucheProcess\RG_ProductVariations.pix"</_expression>
                 <_screenShotBase64 i:nil="true" />
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />

@@ -3030,7 +3030,7 @@
     <Text></Text>
     <_activityFullName>BR.Core.Base.Container</_activityFullName>
   </Logic>
-  <Name>RG_CycleColor.pix</Name>
+  <Name>RG_ProductVariations.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
     <Parameter z:Id="i345">
