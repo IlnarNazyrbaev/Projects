@@ -49,23 +49,23 @@
     </ProjectFileItem>
     <ProjectFileItem z:Id="i13">
       <IsMain>false</IsMain>
-      <Path>RiveGaucheProcess\BrowserWork.pix</Path>
+      <Path>RiveGaucheProcess\RG_SearchBrand.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i14">
       <IsMain>false</IsMain>
-      <Path>RiveGaucheProcess\ProductProcess.pix</Path>
+      <Path>RiveGaucheProcess\RG_CycleColor.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i15">
       <IsMain>false</IsMain>
-      <Path>RiveGaucheProcess\CycleColor.pix</Path>
+      <Path>RiveGaucheProcess\RG_ProductProcess.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i16">
       <IsMain>false</IsMain>
-      <Path>RiveGaucheProcess\CycleVolume.pix</Path>
+      <Path>RiveGaucheProcess\RG_DataProcess.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i17">
       <IsMain>false</IsMain>
-      <Path>RiveGaucheProcess\NoOptions.pix</Path>
+      <Path>RiveGaucheProcess\RG_CheckAvailability.pix</Path>
     </ProjectFileItem>
   </Files>
   <MasterUploadId i:nil="true" />

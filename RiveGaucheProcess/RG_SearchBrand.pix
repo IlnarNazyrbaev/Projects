@@ -22,7 +22,7 @@
           <PropertyValue z:Id="i5">
             <PropertyName>TabUrl</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>$"{dict_config["RpaLessonURL"]}"</_expression>
+            <_expression>$"{in_dict_config["RiveGauchUrl"]}"</_expression>
             <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -30,7 +30,7 @@
           <PropertyValue z:Id="i6">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>web_browser</_expression>
+            <_expression>web_browserChrome</_expression>
             <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -74,7 +74,7 @@
           <PropertyValue z:Id="i10">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>web_browser</_expression>
+            <_expression>web_browserChrome</_expression>
             <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -160,7 +160,7 @@
           <PropertyValue z:Id="i20">
             <PropertyName>Keys</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>row_transactionItem["brand_name"].ToString()</_expression>
+            <_expression>in_row_transactionItem["brand_name"].ToString()</_expression>
             <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -585,7 +585,7 @@
           <PropertyValue z:Id="i69">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>web_browser</_expression>
+            <_expression>web_browserChrome</_expression>
             <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -607,7 +607,7 @@
           <PropertyValue z:Id="i71">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>web_browser</_expression>
+            <_expression>web_browserChrome</_expression>
             <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -731,20 +731,20 @@
     <Text></Text>
     <_activityFullName>BR.Core.Base.Container</_activityFullName>
   </Logic>
-  <Name>BrowserWork.pix</Name>
+  <Name>RG_SearchBrand.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
     <Parameter z:Id="i84">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>Конфиг</Description>
-      <Name>dict_config</Name>
+      <Name>in_dict_config</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
     <Parameter z:Id="i85">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>Транзакция</Description>
-      <Name>row_transactionItem</Name>
+      <Name>in_row_transactionItem</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Data.DataRow</TypeString>
     </Parameter>

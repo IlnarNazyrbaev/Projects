@@ -34,7 +34,7 @@
                       <PropertyValue z:Id="i8">
                         <PropertyName>URL</PropertyName>
                         <_dataType>Expression</_dataType>
-                        <_expression>$"{dict_config["RpaLessonURL"]}"</_expression>
+                        <_expression>$"{in_dict_config["RiveGauchUrl"]}"</_expression>
                         <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -42,7 +42,7 @@
                       <PropertyValue z:Id="i9">
                         <PropertyName>Browser</PropertyName>
                         <_dataType>Expression</_dataType>
-                        <_expression>web_browser</_expression>
+                        <_expression>webBrowser</_expression>
                         <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -58,63 +58,10 @@
                   </AbstractStep>
                   <AbstractStep z:Id="i10" i:type="ExecutedStep">
                     <Childs />
-                    <Id>4dca3526-6793-4326-83ad-d7c164045625</Id>
-                    <Parent z:Ref="i6" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i11">
-                        <PropertyName>Element</PropertyName>
-                        <_dataType>XPath</_dataType>
-                        <_expression i:nil="true" />
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i12">
-                          <d13p1:Nodes xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
-                            <d14p1:list>
-                              <d13p1:XPathNode z:Id="i13">
-                                <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-                                <d13p1:Attributes>
-                                  <d14p1:list>
-                                    <d13p1:XPathAttribute z:Id="i14">
-                                      <d13p1:IsEnabled>false</d13p1:IsEnabled>
-                                      <d13p1:IsPositionAttribute>true</d13p1:IsPositionAttribute>
-                                      <d13p1:Operator>Equal</d13p1:Operator>
-                                      <d13p1:Value i:nil="true" />
-                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
-                                      <d13p1:_name></d13p1:_name>
-                                    </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i15">
-                                      <d13p1:IsEnabled>true</d13p1:IsEnabled>
-                                      <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
-                                      <d13p1:Operator>Equal</d13p1:Operator>
-                                      <d13p1:Value>'Chrome_WidgetWin_1'</d13p1:Value>
-                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
-                                      <d13p1:_name>ClassName</d13p1:_name>
-                                    </d13p1:XPathAttribute>
-                                  </d14p1:list>
-                                </d13p1:Attributes>
-                                <d13p1:IsEnabled>true</d13p1:IsEnabled>
-                                <d13p1:Name>Pane</d13p1:Name>
-                              </d13p1:XPathNode>
-                            </d14p1:list>
-                          </d13p1:Nodes>
-                          <d13p1:ScreenShotBase64 i:nil="true" />
-                        </_xpathSettings>
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId>0</SelectedOptionId>
-                    <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>false</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text></Text>
-                    <_activityFullName>Activities.Desktop.Folding</_activityFullName>
-                  </AbstractStep>
-                  <AbstractStep z:Id="i16" i:type="ExecutedStep">
-                    <Childs />
                     <Id>51a359bb-bdab-4380-8a7a-4e22cb80d470</Id>
                     <Parent z:Ref="i6" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i17">
+                      <PropertyValue z:Id="i11">
                         <PropertyName>SearchBy</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
@@ -122,15 +69,67 @@
                         <_value xmlns:d13p1="http://schemas.datacontract.org/2004/07/Web.Core" i:type="d13p1:ElementSearchBy">XPath</_value>
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i18">
+                      <PropertyValue z:Id="i12">
                         <PropertyName>SearchString</PropertyName>
                         <_dataType>XPath</_dataType>
                         <_expression i:nil="true" />
                         <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i19">
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i13">
                           <d13p1:Nodes xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
                             <d14p1:list>
+                              <d13p1:XPathNode z:Id="i14">
+                                <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                                  <d17p1:string>and</d17p1:string>
+                                </d13p1:AttributeOperators>
+                                <d13p1:Attributes>
+                                  <d14p1:list>
+                                    <d13p1:XPathAttribute z:Id="i15">
+                                      <d13p1:IsEnabled>false</d13p1:IsEnabled>
+                                      <d13p1:IsPositionAttribute>true</d13p1:IsPositionAttribute>
+                                      <d13p1:Operator>Equal</d13p1:Operator>
+                                      <d13p1:Value i:nil="true" />
+                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
+                                      <d13p1:_name></d13p1:_name>
+                                    </d13p1:XPathAttribute>
+                                    <d13p1:XPathAttribute z:Id="i16">
+                                      <d13p1:IsEnabled>false</d13p1:IsEnabled>
+                                      <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
+                                      <d13p1:Operator>Equal</d13p1:Operator>
+                                      <d13p1:Value>'ru'</d13p1:Value>
+                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
+                                      <d13p1:_name>lang</d13p1:_name>
+                                    </d13p1:XPathAttribute>
+                                    <d13p1:XPathAttribute z:Id="i17">
+                                      <d13p1:IsEnabled>false</d13p1:IsEnabled>
+                                      <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
+                                      <d13p1:Operator>Equal</d13p1:Operator>
+                                      <d13p1:Value>''</d13p1:Value>
+                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
+                                      <d13p1:_name>data-critters-container</d13p1:_name>
+                                    </d13p1:XPathAttribute>
+                                  </d14p1:list>
+                                </d13p1:Attributes>
+                                <d13p1:IsEnabled>false</d13p1:IsEnabled>
+                                <d13p1:Name>html</d13p1:Name>
+                              </d13p1:XPathNode>
+                              <d13p1:XPathNode z:Id="i18">
+                                <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                <d13p1:Attributes>
+                                  <d14p1:list>
+                                    <d13p1:XPathAttribute z:Id="i19">
+                                      <d13p1:IsEnabled>false</d13p1:IsEnabled>
+                                      <d13p1:IsPositionAttribute>true</d13p1:IsPositionAttribute>
+                                      <d13p1:Operator>Equal</d13p1:Operator>
+                                      <d13p1:Value i:nil="true" />
+                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
+                                      <d13p1:_name></d13p1:_name>
+                                    </d13p1:XPathAttribute>
+                                  </d14p1:list>
+                                </d13p1:Attributes>
+                                <d13p1:IsEnabled>false</d13p1:IsEnabled>
+                                <d13p1:Name>body</d13p1:Name>
+                              </d13p1:XPathNode>
                               <d13p1:XPathNode z:Id="i20">
                                 <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                                   <d17p1:string>and</d17p1:string>
@@ -149,63 +148,11 @@
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
-                                      <d13p1:Value>'ru'</d13p1:Value>
-                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
-                                      <d13p1:_name>lang</d13p1:_name>
-                                    </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i23">
-                                      <d13p1:IsEnabled>false</d13p1:IsEnabled>
-                                      <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
-                                      <d13p1:Operator>Equal</d13p1:Operator>
-                                      <d13p1:Value>''</d13p1:Value>
-                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
-                                      <d13p1:_name>data-critters-container</d13p1:_name>
-                                    </d13p1:XPathAttribute>
-                                  </d14p1:list>
-                                </d13p1:Attributes>
-                                <d13p1:IsEnabled>false</d13p1:IsEnabled>
-                                <d13p1:Name>html</d13p1:Name>
-                              </d13p1:XPathNode>
-                              <d13p1:XPathNode z:Id="i24">
-                                <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-                                <d13p1:Attributes>
-                                  <d14p1:list>
-                                    <d13p1:XPathAttribute z:Id="i25">
-                                      <d13p1:IsEnabled>false</d13p1:IsEnabled>
-                                      <d13p1:IsPositionAttribute>true</d13p1:IsPositionAttribute>
-                                      <d13p1:Operator>Equal</d13p1:Operator>
-                                      <d13p1:Value i:nil="true" />
-                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
-                                      <d13p1:_name></d13p1:_name>
-                                    </d13p1:XPathAttribute>
-                                  </d14p1:list>
-                                </d13p1:Attributes>
-                                <d13p1:IsEnabled>false</d13p1:IsEnabled>
-                                <d13p1:Name>body</d13p1:Name>
-                              </d13p1:XPathNode>
-                              <d13p1:XPathNode z:Id="i26">
-                                <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                                  <d17p1:string>and</d17p1:string>
-                                </d13p1:AttributeOperators>
-                                <d13p1:Attributes>
-                                  <d14p1:list>
-                                    <d13p1:XPathAttribute z:Id="i27">
-                                      <d13p1:IsEnabled>false</d13p1:IsEnabled>
-                                      <d13p1:IsPositionAttribute>true</d13p1:IsPositionAttribute>
-                                      <d13p1:Operator>Equal</d13p1:Operator>
-                                      <d13p1:Value i:nil="true" />
-                                      <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
-                                      <d13p1:_name></d13p1:_name>
-                                    </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i28">
-                                      <d13p1:IsEnabled>false</d13p1:IsEnabled>
-                                      <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
-                                      <d13p1:Operator>Equal</d13p1:Operator>
                                       <d13p1:Value>'18.1.4'</d13p1:Value>
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>ng-version</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i29">
+                                    <d13p1:XPathAttribute z:Id="i23">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -218,14 +165,14 @@
                                 <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                 <d13p1:Name>app-root</d13p1:Name>
                               </d13p1:XPathNode>
-                              <d13p1:XPathNode z:Id="i30">
+                              <d13p1:XPathNode z:Id="i24">
                                 <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                                   <d17p1:string>and</d17p1:string>
                                   <d17p1:string>and</d17p1:string>
                                 </d13p1:AttributeOperators>
                                 <d13p1:Attributes>
                                   <d14p1:list>
-                                    <d13p1:XPathAttribute z:Id="i31">
+                                    <d13p1:XPathAttribute z:Id="i25">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>true</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -233,7 +180,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name></d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i32">
+                                    <d13p1:XPathAttribute z:Id="i26">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -241,7 +188,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>_nghost-ng-c1168098594</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i33">
+                                    <d13p1:XPathAttribute z:Id="i27">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -249,7 +196,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>data-type-code</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i34">
+                                    <d13p1:XPathAttribute z:Id="i28">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -262,7 +209,7 @@
                                 <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                 <d13p1:Name>layout</d13p1:Name>
                               </d13p1:XPathNode>
-                              <d13p1:XPathNode z:Id="i35">
+                              <d13p1:XPathNode z:Id="i29">
                                 <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                                   <d17p1:string>and</d17p1:string>
                                   <d17p1:string>and</d17p1:string>
@@ -271,7 +218,7 @@
                                 </d13p1:AttributeOperators>
                                 <d13p1:Attributes>
                                   <d14p1:list>
-                                    <d13p1:XPathAttribute z:Id="i36">
+                                    <d13p1:XPathAttribute z:Id="i30">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>true</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -279,7 +226,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name></d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i37">
+                                    <d13p1:XPathAttribute z:Id="i31">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -287,7 +234,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>_ngcontent-ng-c1168098594</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i38">
+                                    <d13p1:XPathAttribute z:Id="i32">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -295,7 +242,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>cms-slot</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i39">
+                                    <d13p1:XPathAttribute z:Id="i33">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -303,7 +250,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>position</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i40">
+                                    <d13p1:XPathAttribute z:Id="i34">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -311,7 +258,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>class</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i41">
+                                    <d13p1:XPathAttribute z:Id="i35">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -324,14 +271,14 @@
                                 <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                 <d13p1:Name>div</d13p1:Name>
                               </d13p1:XPathNode>
-                              <d13p1:XPathNode z:Id="i42">
+                              <d13p1:XPathNode z:Id="i36">
                                 <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                                   <d17p1:string>and</d17p1:string>
                                   <d17p1:string>and</d17p1:string>
                                 </d13p1:AttributeOperators>
                                 <d13p1:Attributes>
                                   <d14p1:list>
-                                    <d13p1:XPathAttribute z:Id="i43">
+                                    <d13p1:XPathAttribute z:Id="i37">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>true</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -339,7 +286,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name></d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i44">
+                                    <d13p1:XPathAttribute z:Id="i38">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -347,7 +294,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>_nghost-ng-c2184262989</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i45">
+                                    <d13p1:XPathAttribute z:Id="i39">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -355,7 +302,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>class</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i46">
+                                    <d13p1:XPathAttribute z:Id="i40">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -368,13 +315,13 @@
                                 <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                 <d13p1:Name>main-menu</d13p1:Name>
                               </d13p1:XPathNode>
-                              <d13p1:XPathNode z:Id="i47">
+                              <d13p1:XPathNode z:Id="i41">
                                 <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                                   <d17p1:string>and</d17p1:string>
                                 </d13p1:AttributeOperators>
                                 <d13p1:Attributes>
                                   <d14p1:list>
-                                    <d13p1:XPathAttribute z:Id="i48">
+                                    <d13p1:XPathAttribute z:Id="i42">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>true</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -382,7 +329,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name></d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i49">
+                                    <d13p1:XPathAttribute z:Id="i43">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -390,7 +337,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>_ngcontent-ng-c2184262989</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i50">
+                                    <d13p1:XPathAttribute z:Id="i44">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -403,13 +350,13 @@
                                 <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                 <d13p1:Name>div</d13p1:Name>
                               </d13p1:XPathNode>
-                              <d13p1:XPathNode z:Id="i51">
+                              <d13p1:XPathNode z:Id="i45">
                                 <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                                   <d17p1:string>and</d17p1:string>
                                 </d13p1:AttributeOperators>
                                 <d13p1:Attributes>
                                   <d14p1:list>
-                                    <d13p1:XPathAttribute z:Id="i52">
+                                    <d13p1:XPathAttribute z:Id="i46">
                                       <d13p1:IsEnabled>true</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>true</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -417,7 +364,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name></d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i53">
+                                    <d13p1:XPathAttribute z:Id="i47">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -425,7 +372,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>_ngcontent-ng-c2184262989</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i54">
+                                    <d13p1:XPathAttribute z:Id="i48">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -438,7 +385,7 @@
                                 <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                 <d13p1:Name>div</d13p1:Name>
                               </d13p1:XPathNode>
-                              <d13p1:XPathNode z:Id="i55">
+                              <d13p1:XPathNode z:Id="i49">
                                 <d13p1:AttributeOperators xmlns:d17p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                                   <d17p1:string>and</d17p1:string>
                                   <d17p1:string>and</d17p1:string>
@@ -446,7 +393,7 @@
                                 </d13p1:AttributeOperators>
                                 <d13p1:Attributes>
                                   <d14p1:list>
-                                    <d13p1:XPathAttribute z:Id="i56">
+                                    <d13p1:XPathAttribute z:Id="i50">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>true</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -454,7 +401,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name></d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i57">
+                                    <d13p1:XPathAttribute z:Id="i51">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -462,7 +409,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>_ngcontent-ng-c2184262989</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i58">
+                                    <d13p1:XPathAttribute z:Id="i52">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -470,7 +417,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>prevent-default</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i59">
+                                    <d13p1:XPathAttribute z:Id="i53">
                                       <d13p1:IsEnabled>false</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -478,7 +425,7 @@
                                       <d13p1:_isCSharpExpression>false</d13p1:_isCSharpExpression>
                                       <d13p1:_name>class</d13p1:_name>
                                     </d13p1:XPathAttribute>
-                                    <d13p1:XPathAttribute z:Id="i60">
+                                    <d13p1:XPathAttribute z:Id="i54">
                                       <d13p1:IsEnabled>true</d13p1:IsEnabled>
                                       <d13p1:IsPositionAttribute>false</d13p1:IsPositionAttribute>
                                       <d13p1:Operator>Equal</d13p1:Operator>
@@ -496,7 +443,7 @@
                           <d13p1:ScreenShotBase64 i:nil="true" />
                         </_xpathSettings>
                       </PropertyValue>
-                      <PropertyValue z:Id="i61">
+                      <PropertyValue z:Id="i55">
                         <PropertyName>Timeout</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>30</_expression>
@@ -504,10 +451,10 @@
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i62">
+                      <PropertyValue z:Id="i56">
                         <PropertyName>Browser</PropertyName>
                         <_dataType>Expression</_dataType>
-                        <_expression>web_browser</_expression>
+                        <_expression>webBrowser</_expression>
                         <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -545,18 +492,18 @@
             <Text></Text>
             <_activityFullName>BR.Core.Base.Try</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i63" i:type="ExecutedStep">
+          <AbstractStep z:Id="i57" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i64" i:type="ExecutedStep">
+              <AbstractStep z:Id="i58" i:type="ExecutedStep">
                 <Childs>
-                  <AbstractStep z:Id="i65" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i59" i:type="ExecutedStep">
                     <Childs>
-                      <AbstractStep z:Id="i66" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i60" i:type="ExecutedStep">
                         <Childs />
                         <Id>9fd330b7-7c9a-431d-8d1b-c8770db0a64b</Id>
-                        <Parent z:Ref="i65" />
+                        <Parent z:Ref="i59" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i67">
+                          <PropertyValue z:Id="i61">
                             <PropertyName>Value</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>$"{error.GetType()}: {errorMessage}"</_expression>
@@ -564,10 +511,10 @@
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i68">
+                          <PropertyValue z:Id="i62">
                             <PropertyName>To</PropertyName>
                             <_dataType>Expression</_dataType>
-                            <_expression>dict_config["MessageBody"]</_expression>
+                            <_expression>in_dict_config["MessageBody"]</_expression>
                             <_screenShotBase64 i:nil="true" />
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -581,12 +528,12 @@
                         <Text>Тело сообщения - Бизнес-ошибка</Text>
                         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i69" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i63" i:type="ExecutedStep">
                         <Childs />
                         <Id>fe6b38a4-3261-48b3-aabd-becab4f4c753</Id>
-                        <Parent z:Ref="i65" />
+                        <Parent z:Ref="i59" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i70">
+                          <PropertyValue z:Id="i64">
                             <PropertyName>FilePath</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>@"FrameworkScripts\Notification.pix"</_expression>
@@ -594,36 +541,36 @@
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i71">
+                          <PropertyValue z:Id="i65">
                             <PropertyName>Parameters</PropertyName>
                             <_dataType>Value</_dataType>
                             <_expression i:nil="true" />
                             <_screenShotBase64 i:nil="true" />
                             <_value xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d15p1:ArrayOfArgumentItem">
-                              <d15p1:ArgumentItem z:Id="i72">
-                                <d15p1:ArgumentName>dict_config</d15p1:ArgumentName>
-                                <d15p1:Expression>dict_config</d15p1:Expression>
-                                <d15p1:Type>Dictionary&lt;System.String, System.Object&gt;</d15p1:Type>
-                              </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i73">
+                              <d15p1:ArgumentItem z:Id="i66">
                                 <d15p1:ArgumentName>int_notifyType</d15p1:ArgumentName>
                                 <d15p1:Expression>2</d15p1:Expression>
                                 <d15p1:Type>System.Int32</d15p1:Type>
                               </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i74">
+                              <d15p1:ArgumentItem z:Id="i67">
                                 <d15p1:ArgumentName>list_attaches</d15p1:ArgumentName>
                                 <d15p1:Expression>new List&lt;string&gt;{}</d15p1:Expression>
                                 <d15p1:Type>List&lt;System.String&gt;</d15p1:Type>
                               </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i75">
+                              <d15p1:ArgumentItem z:Id="i68">
                                 <d15p1:ArgumentName>sec_mailPassword</d15p1:ArgumentName>
-                                <d15p1:Expression>dict_secureData["MailCred_passwd"]</d15p1:Expression>
+                                <d15p1:Expression>in_dict_secureData["MailCred_passwd"]</d15p1:Expression>
                                 <d15p1:Type>System.Security.SecureString</d15p1:Type>
                               </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i76">
+                              <d15p1:ArgumentItem z:Id="i69">
                                 <d15p1:ArgumentName>bool_takeScreenshot</d15p1:ArgumentName>
                                 <d15p1:Expression>true</d15p1:Expression>
                                 <d15p1:Type>System.Boolean</d15p1:Type>
+                              </d15p1:ArgumentItem>
+                              <d15p1:ArgumentItem z:Id="i70">
+                                <d15p1:ArgumentName>in_dict_config</d15p1:ArgumentName>
+                                <d15p1:Expression>in_dict_config</d15p1:Expression>
+                                <d15p1:Type>Dictionary&lt;System.String, System.Object&gt;</d15p1:Type>
                               </d15p1:ArgumentItem>
                             </_value>
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -637,12 +584,12 @@
                         <Text>Выполнить скрипт отправки письма, int_notifyType - 2</Text>
                         <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i77" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i71" i:type="ExecutedStep">
                         <Childs />
                         <Id>3dbdcd10-e61f-4814-a2d9-a8f48a6da8b6</Id>
-                        <Parent z:Ref="i65" />
+                        <Parent z:Ref="i59" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i78">
+                          <PropertyValue z:Id="i72">
                             <PropertyName>Text</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>errorInfo</_expression>
@@ -650,7 +597,7 @@
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i79">
+                          <PropertyValue z:Id="i73">
                             <PropertyName>Exception</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>new BusinessRuleException($"{error.GetType()}: {errorMessage}")</_expression>
@@ -669,7 +616,7 @@
                       </AbstractStep>
                     </Childs>
                     <Id>c3765399-41cc-433f-9856-219530706128</Id>
-                    <Parent z:Ref="i64" />
+                    <Parent z:Ref="i58" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
@@ -679,14 +626,14 @@
                     <Text></Text>
                     <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i80" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i74" i:type="ExecutedStep">
                     <Childs>
-                      <AbstractStep z:Id="i81" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i75" i:type="ExecutedStep">
                         <Childs />
                         <Id>4788bc5f-d451-4731-89c5-d6e50e79d456</Id>
-                        <Parent z:Ref="i80" />
+                        <Parent z:Ref="i74" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i82">
+                          <PropertyValue z:Id="i76">
                             <PropertyName>Value</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>$"{error.GetType()}: {errorMessage}\n{errorSource}"</_expression>
@@ -694,10 +641,10 @@
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i83">
+                          <PropertyValue z:Id="i77">
                             <PropertyName>To</PropertyName>
                             <_dataType>Expression</_dataType>
-                            <_expression>dict_config["MessageBody"]</_expression>
+                            <_expression>in_dict_config["MessageBody"]</_expression>
                             <_screenShotBase64 i:nil="true" />
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -711,12 +658,12 @@
                         <Text>Тело сообщения - Системная ошибка</Text>
                         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i84" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i78" i:type="ExecutedStep">
                         <Childs />
                         <Id>f149868c-26b4-4ad9-a361-72a88cad61dc</Id>
-                        <Parent z:Ref="i80" />
+                        <Parent z:Ref="i74" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i85">
+                          <PropertyValue z:Id="i79">
                             <PropertyName>FilePath</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>@"FrameworkScripts\Notification.pix"</_expression>
@@ -724,36 +671,36 @@
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i86">
+                          <PropertyValue z:Id="i80">
                             <PropertyName>Parameters</PropertyName>
                             <_dataType>Value</_dataType>
                             <_expression i:nil="true" />
                             <_screenShotBase64 i:nil="true" />
                             <_value xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d15p1:ArrayOfArgumentItem">
-                              <d15p1:ArgumentItem z:Id="i87">
-                                <d15p1:ArgumentName>dict_config</d15p1:ArgumentName>
-                                <d15p1:Expression>dict_config</d15p1:Expression>
-                                <d15p1:Type>Dictionary&lt;System.String, System.Object&gt;</d15p1:Type>
-                              </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i88">
+                              <d15p1:ArgumentItem z:Id="i81">
                                 <d15p1:ArgumentName>int_notifyType</d15p1:ArgumentName>
                                 <d15p1:Expression>3</d15p1:Expression>
                                 <d15p1:Type>System.Int32</d15p1:Type>
                               </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i89">
+                              <d15p1:ArgumentItem z:Id="i82">
                                 <d15p1:ArgumentName>list_attaches</d15p1:ArgumentName>
                                 <d15p1:Expression>new List&lt;string&gt;{}</d15p1:Expression>
                                 <d15p1:Type>List&lt;System.String&gt;</d15p1:Type>
                               </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i90">
+                              <d15p1:ArgumentItem z:Id="i83">
                                 <d15p1:ArgumentName>sec_mailPassword</d15p1:ArgumentName>
-                                <d15p1:Expression>dict_secureData["MailCred_passwd"]</d15p1:Expression>
+                                <d15p1:Expression>in_dict_secureData["MailCred_passwd"]</d15p1:Expression>
                                 <d15p1:Type>System.Security.SecureString</d15p1:Type>
                               </d15p1:ArgumentItem>
-                              <d15p1:ArgumentItem z:Id="i91">
+                              <d15p1:ArgumentItem z:Id="i84">
                                 <d15p1:ArgumentName>bool_takeScreenshot</d15p1:ArgumentName>
                                 <d15p1:Expression>true</d15p1:Expression>
                                 <d15p1:Type>System.Boolean</d15p1:Type>
+                              </d15p1:ArgumentItem>
+                              <d15p1:ArgumentItem z:Id="i85">
+                                <d15p1:ArgumentName>in_dict_config</d15p1:ArgumentName>
+                                <d15p1:Expression>in_dict_config</d15p1:Expression>
+                                <d15p1:Type>Dictionary&lt;System.String, System.Object&gt;</d15p1:Type>
                               </d15p1:ArgumentItem>
                             </_value>
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -761,18 +708,18 @@
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
-                        <EnableStatus>false</EnableStatus>
+                        <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                         <RetryCount>-1</RetryCount>
                         <Text>Выполнить скрипт отправки письма, int_notifyType - 3</Text>
                         <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i92" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i86" i:type="ExecutedStep">
                         <Childs />
                         <Id>963c3047-5073-4510-8576-16ace72c8964</Id>
-                        <Parent z:Ref="i80" />
+                        <Parent z:Ref="i74" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i93">
+                          <PropertyValue z:Id="i87">
                             <PropertyName>Text</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>$"{error.GetType()}: {errorMessage}\n{errorSource}"</_expression>
@@ -780,7 +727,7 @@
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i94">
+                          <PropertyValue z:Id="i88">
                             <PropertyName>Exception</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>errorInfo</_expression>
@@ -799,7 +746,7 @@
                       </AbstractStep>
                     </Childs>
                     <Id>3a1f0ecc-e4ac-411e-af30-c73649fedcd9</Id>
-                    <Parent z:Ref="i64" />
+                    <Parent z:Ref="i58" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
@@ -811,9 +758,9 @@
                   </AbstractStep>
                 </Childs>
                 <Id>3b6fb151-87a0-47a2-ac45-dfb7ec02c973</Id>
-                <Parent z:Ref="i63" />
+                <Parent z:Ref="i57" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i95">
+                  <PropertyValue z:Id="i89">
                     <PropertyName>Condition</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>error.GetType() == new BusinessRuleException().GetType()</_expression>
@@ -834,7 +781,7 @@
             <Id>3ee66eda-5ebf-4a74-817d-8123360c85f5</Id>
             <Parent z:Ref="i4" />
             <PropertyValues>
-              <PropertyValue z:Id="i96">
+              <PropertyValue z:Id="i90">
                 <PropertyName>Message</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>errorMessage</_expression>
@@ -842,7 +789,7 @@
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i97">
+              <PropertyValue z:Id="i91">
                 <PropertyName>Source</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>errorSource</_expression>
@@ -850,7 +797,7 @@
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i98">
+              <PropertyValue z:Id="i92">
                 <PropertyName>Exception</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>error</_expression>
@@ -867,7 +814,7 @@
             <Text></Text>
             <_activityFullName>BR.Core.Base.Catch</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i99" i:type="ExecutedStep">
+          <AbstractStep z:Id="i93" i:type="ExecutedStep">
             <Childs />
             <Id>a0db4eec-603b-46f2-92b0-2baab33903f2</Id>
             <Parent z:Ref="i4" />
@@ -909,24 +856,24 @@
     <d2p1:string>PIX.Core.Exceptions</d2p1:string>
   </Namespaces>
   <Params>
-    <Parameter z:Id="i100">
+    <Parameter z:Id="i94">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>Конфиг</Description>
-      <Name>dict_config</Name>
+      <Name>in_dict_config</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i101">
+    <Parameter z:Id="i95">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
-      <Name>dict_secureData</Name>
+      <Name>in_dict_secureData</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Security.SecureString, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i102">
+    <Parameter z:Id="i96">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
-      <Name>dict_paths</Name>
+      <Name>in_dict_paths</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
