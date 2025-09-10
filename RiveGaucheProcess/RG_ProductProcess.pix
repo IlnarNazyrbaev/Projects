@@ -715,7 +715,7 @@
               <PropertyValue z:Id="i84">
                 <PropertyName>Condition</PropertyName>
                 <_dataType>Expression</_dataType>
-                <_expression>bool_buttonGo || int_countSteps &gt; 50</_expression>
+                <_expression>bool_buttonGo</_expression>
                 <_screenShotBase64 i:nil="true" />
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -726,14 +726,77 @@
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
             <RetryCount>-1</RetryCount>
-            <Text></Text>
+            <Text>Есть кнопка Вперед?</Text>
+            <_activityFullName>BR.Core.Base.If</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i85" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i86" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i87" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>3cabbe4b-b7dd-4413-96bc-2168aa618403</Id>
+                    <Parent z:Ref="i86" />
+                    <PropertyValues />
+                    <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Выходим из цикла</Text>
+                    <_activityFullName>BR.Core.Base.BreakLoop</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>0280ce8b-916b-4a88-a941-7ecd8f5a9ba6</Id>
+                <Parent z:Ref="i85" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i88" i:type="ExecutedStep">
+                <Childs />
+                <Id>68b12c7b-5853-407f-9556-f7d02edccee8</Id>
+                <Parent z:Ref="i85" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>bf733fd9-9855-4036-b3e4-487f4b878e65</Id>
+            <Parent z:Ref="i34" />
+            <PropertyValues>
+              <PropertyValue z:Id="i89">
+                <PropertyName>Condition</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>int_countSteps == 30</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>Условный оператор - Счетчик достиг 30? (Для предотвращения бесконечного цикла)</Text>
             <_activityFullName>BR.Core.Base.If</_activityFullName>
           </AbstractStep>
         </Childs>
         <Id>d96a18da-a560-4b23-bbce-eaaf9c552142</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i85">
+          <PropertyValue z:Id="i90">
             <PropertyName>Condition</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>bool_buttonGo</_expression>
@@ -741,7 +804,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i86">
+          <PropertyValue z:Id="i91">
             <PropertyName>Counter</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>int_countSteps</_expression>
@@ -758,12 +821,12 @@
         <Text></Text>
         <_activityFullName>BR.Core.Base.LoopWhile</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i87" i:type="ExecutedStep">
+      <AbstractStep z:Id="i92" i:type="ExecutedStep">
         <Childs />
         <Id>48d582ff-9156-4253-9cf4-3968ed3dc3ee</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i88">
+          <PropertyValue z:Id="i93">
             <PropertyName>XmlString</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"&lt;pointpath&gt;
@@ -776,7 +839,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i89">
+          <PropertyValue z:Id="i94">
             <PropertyName>NextPageTimeout</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>10</_expression>
@@ -784,7 +847,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i90">
+          <PropertyValue z:Id="i95">
             <PropertyName>Result</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>dt_productNames</_expression>
@@ -792,7 +855,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i91">
+          <PropertyValue z:Id="i96">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>browserWork</_expression>
@@ -809,12 +872,12 @@
         <Text>Получаем все товары</Text>
         <_activityFullName>Activities.Web.ScrapingData</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i92" i:type="ExecutedStep">
+      <AbstractStep z:Id="i97" i:type="ExecutedStep">
         <Childs />
         <Id>fc8b2686-3d1f-4a25-abc1-d743541a062e</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i93">
+          <PropertyValue z:Id="i98">
             <PropertyName>InitialTable</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -846,7 +909,7 @@
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i94">
+          <PropertyValue z:Id="i99">
             <PropertyName>BaseDataTable</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>dt_resultProduct</_expression>
@@ -863,14 +926,14 @@
         <Text>Создаем таблицу с итоговыми данными, которую позже будем заносить в БД</Text>
         <_activityFullName>Activities.BaseCollections.DT.CreateTable</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i95" i:type="ExecutedStep">
+      <AbstractStep z:Id="i100" i:type="ExecutedStep">
         <Childs>
-          <AbstractStep z:Id="i96" i:type="ExecutedStep">
+          <AbstractStep z:Id="i101" i:type="ExecutedStep">
             <Childs />
             <Id>83a2824d-c7f8-4034-af78-c4993a837de1</Id>
-            <Parent z:Ref="i95" />
+            <Parent z:Ref="i100" />
             <PropertyValues>
-              <PropertyValue z:Id="i97">
+              <PropertyValue z:Id="i102">
                 <PropertyName>URL</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>row_productName["hrefBrand"].ToString()</_expression>
@@ -878,7 +941,7 @@
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i98">
+              <PropertyValue z:Id="i103">
                 <PropertyName>Browser</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>browserWork</_expression>
@@ -895,12 +958,12 @@
             <Text>Переходим по url товара</Text>
             <_activityFullName>Activities.Web.NavigateURL</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i99" i:type="ExecutedStep">
+          <AbstractStep z:Id="i104" i:type="ExecutedStep">
             <Childs />
             <Id>26b617fa-9566-485b-9ef4-ee60249470f3</Id>
-            <Parent z:Ref="i95" />
+            <Parent z:Ref="i100" />
             <PropertyValues>
-              <PropertyValue z:Id="i100">
+              <PropertyValue z:Id="i105">
                 <PropertyName>FilePath</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>@"RiveGaucheProcess\RG_ProductVariations.pix"</_expression>
@@ -908,28 +971,28 @@
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i101">
+              <PropertyValue z:Id="i106">
                 <PropertyName>Parameters</PropertyName>
                 <_dataType>Value</_dataType>
                 <_expression i:nil="true" />
                 <_screenShotBase64 i:nil="true" />
                 <_value xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d9p1:ArrayOfArgumentItem">
-                  <d9p1:ArgumentItem z:Id="i102">
+                  <d9p1:ArgumentItem z:Id="i107">
                     <d9p1:ArgumentName>in_dict_config</d9p1:ArgumentName>
                     <d9p1:Expression>in_dict_config</d9p1:Expression>
                     <d9p1:Type>Dictionary&lt;System.String, System.Object&gt;</d9p1:Type>
                   </d9p1:ArgumentItem>
-                  <d9p1:ArgumentItem z:Id="i103">
+                  <d9p1:ArgumentItem z:Id="i108">
                     <d9p1:ArgumentName>io_dt_resultProduct</d9p1:ArgumentName>
                     <d9p1:Expression>dt_resultProduct</d9p1:Expression>
                     <d9p1:Type>System.Data.DataTable</d9p1:Type>
                   </d9p1:ArgumentItem>
-                  <d9p1:ArgumentItem z:Id="i104">
+                  <d9p1:ArgumentItem z:Id="i109">
                     <d9p1:ArgumentName>in_dt_cityBrand</d9p1:ArgumentName>
                     <d9p1:Expression>in_dt_cityBrand</d9p1:Expression>
                     <d9p1:Type>System.Data.DataTable</d9p1:Type>
                   </d9p1:ArgumentItem>
-                  <d9p1:ArgumentItem z:Id="i105">
+                  <d9p1:ArgumentItem z:Id="i110">
                     <d9p1:ArgumentName>in_row_productName</d9p1:ArgumentName>
                     <d9p1:Expression>row_productName</d9p1:Expression>
                     <d9p1:Type>System.Data.DataRow</d9p1:Type>
@@ -950,7 +1013,7 @@
         <Id>276d9c3c-5d76-4648-9d67-c4199890192f</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i106">
+          <PropertyValue z:Id="i111">
             <PropertyName>Collection</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>dt_productNames</_expression>
@@ -958,7 +1021,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i107">
+          <PropertyValue z:Id="i112">
             <PropertyName>Iterator</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>row_productName</_expression>
@@ -966,7 +1029,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i108">
+          <PropertyValue z:Id="i113">
             <PropertyName>Counter</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression></_expression>
@@ -983,12 +1046,12 @@
         <Text>Перебираем каждый товар</Text>
         <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i109" i:type="ExecutedStep">
+      <AbstractStep z:Id="i114" i:type="ExecutedStep">
         <Childs />
         <Id>884654d5-58df-436d-b8db-e39ae940656b</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i110">
+          <PropertyValue z:Id="i115">
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>new System.Net.NetworkCredential(string.Empty, in_dict_secureData["DbCred_passwd"]).Password</_expression>
@@ -996,7 +1059,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i111">
+          <PropertyValue z:Id="i116">
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>str_passwordDB</_expression>
@@ -1013,12 +1076,12 @@
         <Text>Преобразовываем SecureString к String</Text>
         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i112" i:type="ExecutedStep">
+      <AbstractStep z:Id="i117" i:type="ExecutedStep">
         <Childs />
         <Id>45581d0b-e83e-4ea0-b3b5-d56235c6bc48</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i113">
+          <PropertyValue z:Id="i118">
             <PropertyName>DataBaseConnectionString</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@$"Driver={"PostgreSQL UNICODE"}; Server={in_dict_config["DbCred_login"].ToString()}; Port={"5432"}; Database={"testdb"}; Uid={"postgres"}; Pwd={str_passwordDB};"</_expression>
@@ -1026,7 +1089,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i114">
+          <PropertyValue z:Id="i119">
             <PropertyName>DataBaseProvider</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"System.Data.Odbc"</_expression>
@@ -1034,7 +1097,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i115">
+          <PropertyValue z:Id="i120">
             <PropertyName>OutSqlConnection</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>db_connectionData</_expression>
@@ -1051,12 +1114,12 @@
         <Text>Подключаемся к локальной БД</Text>
         <_activityFullName>Activities.DataBaseSQL.CreateConnection</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i116" i:type="ExecutedStep">
+      <AbstractStep z:Id="i121" i:type="ExecutedStep">
         <Childs />
         <Id>4288145f-d804-4be5-a862-23edb24dc37f</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i117">
+          <PropertyValue z:Id="i122">
             <PropertyName>Connection</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>db_connectionData</_expression>
@@ -1064,7 +1127,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i118">
+          <PropertyValue z:Id="i123">
             <PropertyName>DataBaseSchemaName</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"public"</_expression>
@@ -1072,7 +1135,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i119">
+          <PropertyValue z:Id="i124">
             <PropertyName>DataBaseTableName</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"result"</_expression>
@@ -1080,7 +1143,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i120">
+          <PropertyValue z:Id="i125">
             <PropertyName>DataTable</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>dt_resultProduct</_expression>
@@ -1088,7 +1151,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i121">
+          <PropertyValue z:Id="i126">
             <PropertyName>OneChunkMaxRowsCount</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>150</_expression>
@@ -1096,7 +1159,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i122">
+          <PropertyValue z:Id="i127">
             <PropertyName>AffectedRows</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression></_expression>
@@ -1113,12 +1176,12 @@
         <Text></Text>
         <_activityFullName>Activities.DataBaseSQL.SaveTableToDatabase</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i123" i:type="ExecutedStep">
+      <AbstractStep z:Id="i128" i:type="ExecutedStep">
         <Childs />
         <Id>6c555df6-e023-4064-842d-0894008cc768</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i124">
+          <PropertyValue z:Id="i129">
             <PropertyName>InSqlConnection</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>db_connectionData</_expression>
@@ -1135,12 +1198,12 @@
         <Text></Text>
         <_activityFullName>Activities.DataBaseSQL.RemoveConnection</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i125" i:type="ExecutedStep">
+      <AbstractStep z:Id="i130" i:type="ExecutedStep">
         <Childs />
         <Id>1505d041-fa70-4973-aab7-0a3717d3fd8e</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i126">
+          <PropertyValue z:Id="i131">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>browserWork</_expression>
@@ -1172,21 +1235,21 @@
   <Name>RG_ProductProcess.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i127">
+    <Parameter z:Id="i132">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>Конфиг</Description>
       <Name>in_dict_config</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i128">
+    <Parameter z:Id="i133">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>Таблица с городами брендов</Description>
       <Name>in_dt_cityBrand</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Data.DataTable</TypeString>
     </Parameter>
-    <Parameter z:Id="i129">
+    <Parameter z:Id="i134">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>Конфиг с защищенными данными</Description>
       <Name>in_dict_secureData</Name>
@@ -1201,6 +1264,13 @@
     <d2p1:_Revision>0</d2p1:_Revision>
   </PlatformVersion>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
-  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params" />
+  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params">
+    <d2p1:Variable z:Id="i135">
+      <d2p1:DefaultValueExpression></d2p1:DefaultValueExpression>
+      <d2p1:Description>Счетчик для цикла</d2p1:Description>
+      <d2p1:Name>int_countSteps</d2p1:Name>
+      <d2p1:TypeString>System.Int32</d2p1:TypeString>
+    </d2p1:Variable>
+  </Variables>
   <Version i:nil="true" />
 </Script>

@@ -1336,7 +1336,7 @@
                     <_dataType>Expression</_dataType>
                     <_expression>@"&lt;pointpath&gt;
   &lt;columns&gt;
-    &lt;column name=""href"" attrname=""href"" xpath=""//a[@draggable = 'false']"" /&gt;
+    &lt;column name=""href"" attrname=""href"" xpath=""//product-color-item/div/a[contains(@href,'product')]"" /&gt;
   &lt;/columns&gt;
 &lt;/pointpath&gt;"</_expression>
                     <_screenShotBase64 i:nil="true" />
@@ -1392,7 +1392,7 @@
                     <_dataType>Expression</_dataType>
                     <_expression>@"&lt;pointpath&gt;
   &lt;columns&gt;
-    &lt;column name=""href"" attrname=""href"" xpath=""//a[contains(@class, 'item') and contains(@class, 'discount')]"" /&gt;
+    &lt;column name=""href"" attrname=""href"" xpath=""//product-volume/div/a[contains(@href,'product')]"" /&gt;
   &lt;/columns&gt;
 &lt;/pointpath&gt;"</_expression>
                     <_screenShotBase64 i:nil="true" />
